@@ -1,0 +1,23 @@
+page-home {
+  #imgBox{
+    width: 100%;
+    margin-top: 1.5em;
+  }
+  .imgInclusion{
+    display: inline-block;
+    width: 45%;
+    margin: auto 2%;
+  }
+
+  .imgShow{
+    border-radius: 15px;
+    border: gray 1px solid;
+  }
+  .imgDeleteButton{
+    width: 20%;
+    border-radius: 15px;
+    position: relative;
+    left: 90%;
+    top:-1.5em;
+  }
+}

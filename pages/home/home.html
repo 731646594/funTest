@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>功能测试</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="ceshi()" style="margin-left: 16px">下载文件测试</button>
+  <button ion-button (click)="sao()" style="margin-left: 16px">扫码测试</button>
+  <button ion-button (click)="openCamera()" style="margin-left: 16px">拍照测试</button>
+  <button ion-button (click)="xuantu()" style="margin-left: 16px">图片选择测试</button>
+  <button ion-button (click)="cewang()" style="margin-left: 16px">网络连接状态测试</button>
+  <button ion-button (click)="ce()" style="margin-left: 16px">测试</button>
+  <div id="imgBox">
+  </div>
+  <div style="margin-left: 16px">{{fileContent}}</div>
+  <ion-list *ngFor="let item of listData">
+    <ion-item>
+      url:{{item?.url}}<br>
+      name:{{item?.name}}<br>
+      number:{{item?.number}}<br>
+      planName:{{item?.planName}}<br>
+      planNumber:{{item?.planNumber}}<br>
+      startDate:{{item?.startDate}}<br>
+      stopDate:{{item?.stopDate}}<br>
+      <button ion-button (click)="xia(item)">下载</button>
+    </ion-item>
+  </ion-list>
+</ion-content>
