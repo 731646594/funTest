@@ -245,7 +245,5 @@ export class HomePage {
       alert("网络连接正常")
     }
   }
-  ce(){
 
-  }
 }
